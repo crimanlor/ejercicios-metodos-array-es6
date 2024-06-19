@@ -14,3 +14,5 @@ if (edad >= 18) {
 console.log(puedesPasar) // Debería ser true pero vale false. ¿por qué?
 
 // PREGUNTA: ¿Por qué no se actualiza correctamente la variable 'puedesPasar'?
+
+// Porque la variable puedesPasar, se está volviéndo a declarar dentro del if, creando una nueva variable de ámbito local, en lugar de reasignarle el valor true a la variable global.
